@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expice Restaurant Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="inner header__content">
+                <div class="header__menu">
+                    <a class="navbar-brand header__logo" href="#">expice</a>
+                    <nav class="header__navbar">
+                        <div class="navbar__container d-flex">
+                            <div class="navbar-nav header__nav">
+                                <a class="nav-link nav__item header__nav-item" aria-current="page" href="#">Menu
+                                    One</a>
+                                <a class="nav-link nav__item header__nav-item" href="#">Menu Two</a>
+                                <a class="nav-link nav__item header__nav-item" href="#">Menu Three</a>
+                                <a class="nav-link nav__item header__nav-item" href="#">Menu Four</a>
+                            </div>
+                            <div class="header__user">
+                                <span class="header__userpic">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.6066 19.3934C23.9729 17.7596 22.0283 16.5502 19.9066 15.8181C22.179 14.253 23.6719 11.6337 23.6719 8.67188C23.6719 3.89021 19.7817 0 15 0C10.2183 0 6.32812 3.89021 6.32812 8.67188C6.32812 11.6337 7.82103 14.253 10.0935 15.8181C7.9718 16.5502 6.02719 17.7596 4.39342 19.3934C1.56029 22.2265 0 25.9934 0 30H2.34375C2.34375 23.0213 8.02131 17.3438 15 17.3438C21.9787 17.3438 27.6562 23.0213 27.6562 30H30C30 25.9934 28.4397 22.2265 25.6066 19.3934ZM15 15C11.5107 15 8.67188 12.1613 8.67188 8.67188C8.67188 5.1825 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.1825 21.3281 8.67188C21.3281 12.1613 18.4893 15 15 15Z"
+                                            fill="#2E266F" />
+                                    </svg>
+                                </span>
+                                <div class="header__username">user</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"
+                                    fill="none">
+                                    <path
+                                        d="M4.47171 4.25311L0.220381 1.35447C-0.0734605 1.15413 -0.0734605 0.830161 0.220381 0.631945L0.926852 0.15026C1.22069 -0.0500867 1.69584 -0.0500867 1.98656 0.15026L5 2.20488L8.01344 0.15026C8.30728 -0.0500867 8.78243 -0.0500867 9.07315 0.15026L9.77962 0.631945C10.0735 0.832292 10.0735 1.15626 9.77962 1.35447L5.52829 4.25311C5.2407 4.45346 4.76555 4.45346 4.47171 4.25311Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Вне холста -->
+                    <button class="btn ms-auto header__navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-item"></span>
+                        <span class="navbar-toggler-item"></span>
+                        <span class="navbar-toggler-item"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start header__offcanvas" data-bs-scroll="true"
+                        data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                        aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Закрыть"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="navbar__container d-flex">
+                                <div class="navbar-nav header__nav">
+                                    <a class="nav-link nav__item header__nav-item" aria-current="page" href="#">Menu
+                                        One</a>
+                                    <a class="nav-link nav__item header__nav-item" href="#">Menu Two</a>
+                                    <a class="nav-link nav__item header__nav-item" href="#">Menu Three</a>
+                                    <a class="nav-link nav__item header__nav-item" href="#">Menu Four</a>
+                                </div>
+                                <div class="header__user">
+                                    <span class="header__userpic">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.6066 19.3934C23.9729 17.7596 22.0283 16.5502 19.9066 15.8181C22.179 14.253 23.6719 11.6337 23.6719 8.67188C23.6719 3.89021 19.7817 0 15 0C10.2183 0 6.32812 3.89021 6.32812 8.67188C6.32812 11.6337 7.82103 14.253 10.0935 15.8181C7.9718 16.5502 6.02719 17.7596 4.39342 19.3934C1.56029 22.2265 0 25.9934 0 30H2.34375C2.34375 23.0213 8.02131 17.3438 15 17.3438C21.9787 17.3438 27.6562 23.0213 27.6562 30H30C30 25.9934 28.4397 22.2265 25.6066 19.3934ZM15 15C11.5107 15 8.67188 12.1613 8.67188 8.67188C8.67188 5.1825 11.5107 2.34375 15 2.34375C18.4893 2.34375 21.3281 5.1825 21.3281 8.67188C21.3281 12.1613 18.4893 15 15 15Z"
+                                                fill="#2E266F" />
+                                        </svg>
+                                    </span>
+                                    <div class="header__username">user</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"
+                                        fill="none">
+                                        <path
+                                            d="M4.47171 4.25311L0.220381 1.35447C-0.0734605 1.15413 -0.0734605 0.830161 0.220381 0.631945L0.926852 0.15026C1.22069 -0.0500867 1.69584 -0.0500867 1.98656 0.15026L5 2.20488L8.01344 0.15026C8.30728 -0.0500867 8.78243 -0.0500867 9.07315 0.15026L9.77962 0.631945C10.0735 0.832292 10.0735 1.15626 9.77962 1.35447L5.52829 4.25311C5.2407 4.45346 4.76555 4.45346 4.47171 4.25311Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__section">
+                    <h1 class="header__title">
+                        <span class="highlight-text">Food</span>
+                        Discover Restaurant <br>& Delicious Food
+                    </h1>
+                </div>
+                <div class="header__section header-search">
+                    <form class="d-flex w-100 h-100 header-search__form" role="search">
+                        <input class="form-control me-2 search-form-input" type="search"
+                            placeholder="search restaurant, food" aria-label="search restaurant, food">
+                        <button class="btn btn-outline-success" type="submit">go</button>
+                    </form>
+                </div>
+                <div class="header__section header__location">
+                    <a href="#" class="location-map-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25" fill="none">
+                            <path
+                                d="M8.97229 24.4956C1.40469 14.2105 0 13.1549 0 9.375C0 4.19731 4.47714 0 10 0C15.5229 0 20 4.19731 20 9.375C20 13.1549 18.5953 14.2105 11.0277 24.4956C10.5311 25.1682 9.46885 25.1681 8.97229 24.4956ZM10 13.2812C12.3012 13.2812 14.1667 11.5324 14.1667 9.375C14.1667 7.21763 12.3012 5.46875 10 5.46875C7.6988 5.46875 5.83333 7.21763 5.83333 9.375C5.83333 11.5324 7.6988 13.2812 10 13.2812Z"
+                                fill="white" />
+                        </svg>
+                        Rajshahi
+                    </a>
+                </div>
+            </div>
+            <div class="header__overlay">
+                <div class="header__slider">
+                    <div id="carouselExample" class="carousel slide header__carouselExample">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/header-plate.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/header-plate.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/header-plate.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev header__slider-btn header__slider-btn-prev" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-arrow-prev"></span>
+                            <span class="carousel-btn-round"></span>
+                        </button>
+                        <button class="carousel-control-next header__slider-btn header__slider-btn-next" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-arrow-next"></span>
+                            <span class="carousel-btn-round"></span>
+                        </button>
+                    </div>
+                    <div class="header__slider-bg">
+                        <img src="img/header-dots.png" alt="">
+                        <img src="img/header-dots.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__content">
+                <p>main</p>
+                <p>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Кнопка с data-target
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но
+                        открывается, когда пользователь активирует соответствующий триггер.
+                    </div>
+                </div>
+
+                <!-- gpt -->
+                <button id="toggleButton">Показать/скрыть элементы</button>
+                <div class="items-container">
+                    <div class="item">Элемент 1</div>
+                    <div class="item">Элемент 2</div>
+                    <div class="item">Элемент 3</div>
+                    <div class="item">Элемент 4</div>
+                    <div class="item">Элемент 5</div>
+                    <!-- Добавьте нужное количество элементов -->
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <p>footer</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores quasi delectus blanditiis
+                provident dicta. Voluptate recusandae odio et earum ipsum? Ut libero quis aut, delectus voluptate fuga
+                sequi assumenda temporibus possimus nam commodi! Amet eaque qui at ratione? Nulla reiciendis cum
+                perspiciatis quis voluptates, excepturi voluptatem similique officia ipsa error explicabo ad eaque ullam
+                quo commodi, aspernatur possimus ea tempora veritatis molestiae distinctio cumque! Facere mollitia sequi
+                in eveniet officia aliquam labore iure dignissimos deserunt molestiae, corrupti deleniti rerum maiores
+                consequuntur et beatae quasi asperiores odio saepe recusandae a. Sequi ratione quidem delectus
+                consectetur aspernatur, quos cum expedita alias ex sed impedit. Nesciunt vel necessitatibus suscipit
+                eveniet animi? Odio sapiente at commodi. Voluptates doloremque sed natus reprehenderit, dolore ipsam
+                obcaecati unde veritatis laborum. Deserunt odit qui delectus, laudantium sequi quidem? Commodi dolore
+                eos reprehenderit quisquam, atque molestiae repellendus nobis harum vero veritatis fugit in sit sunt
+                suscipit rerum nam esse minima distinctio officiis possimus? Aspernatur inventore reiciendis fugit
+                recusandae eum hic natus non dignissimos error? Accusantium porro laborum consequuntur saepe ipsam amet
+                vel iste sed, sapiente repudiandae minus totam beatae consectetur non iusto voluptatibus eum nemo
+                laboriosam, cum veniam! Earum soluta ratione numquam recusandae ipsa praesentium eaque ducimus nihil
+                ipsam doloremque laboriosam cupiditate magnam iste amet, ullam dignissimos officiis culpa explicabo
+                illum. Et animi officia tempore rerum est repellendus voluptate excepturi dolore. Libero expedita
+                perspiciatis, obcaecati recusandae iusto quam, necessitatibus itaque doloremque quos culpa iure ut
+                tenetur enim repellendus. Ut distinctio quisquam quo sunt, nobis deserunt error soluta cum eaque magni
+                facere aut nemo pariatur et? Pariatur, sequi vel dolor placeat omnis, odit nulla laudantium illum in
+                voluptas quo obcaecati labore hic, recusandae impedit saepe ipsum. Vero nobis quam labore quia cumque ab
+                dolorum saepe magnam aut, minima sint debitis maiores optio molestias perferendis officia esse totam
+                ipsum quidem beatae, error atque ratione aliquam? Inventore nostrum praesentium voluptatem suscipit
+                error eius fugiat deserunt repellat aspernatur nisi rerum natus accusantium harum quas porro autem,
+                obcaecati eveniet eaque unde ipsum vel consequatur ipsam quidem nobis. Optio earum doloribus nulla
+                minima reprehenderit possimus, fuga sed magnam at a corrupti adipisci omnis iste perspiciatis quos!
+                Veniam quidem assumenda accusantium illum animi doloribus dolor placeat. Minima repellendus non,
+                explicabo qui atque necessitatibus tempore aspernatur id sed earum ut, unde dolor error. Fugit, at dicta
+                aspernatur exercitationem laborum magni nisi neque, quod aliquam nesciunt non voluptatum, modi corrupti
+                maiores earum recusandae. Labore minus nesciunt tempora.
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- A picture for the background -->
+    <img src="img/pic-bg.png" alt="" class="header__pic-bg">
+    <div class="underlying-layer"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
