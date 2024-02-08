@@ -47,12 +47,6 @@
                     </nav>
 
                     <!-- Вне холста -->
-                    <button class="btn ms-auto header__navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                        <span class="navbar-toggler-item"></span>
-                        <span class="navbar-toggler-item"></span>
-                        <span class="navbar-toggler-item"></span>
-                    </button>
 
                     <div class="offcanvas offcanvas-start header__offcanvas" data-bs-scroll="true"
                         data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
@@ -60,8 +54,13 @@
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu
                             </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Закрыть"></button>
+
+                            <button class="btn ms-auto header__navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                <span class="navbar-toggler-item"></span>
+                                <span class="navbar-toggler-item"></span>
+                                <span class="navbar-toggler-item"></span>
+                            </button>
                         </div>
                         <div class="offcanvas-body">
                             <div class="navbar__container d-flex">
@@ -92,7 +91,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <button class="btn ms-auto header__navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-item"></span>
+                        <span class="navbar-toggler-item"></span>
+                        <span class="navbar-toggler-item"></span>
+                    </button>
+
                 </div>
+
                 <div class="header__section">
                     <h1 class="header__title">
                         <span class="highlight-text">Food</span>
@@ -117,6 +125,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="header__overlay">
                 <div class="header__slider">
                     <div id="carouselExample" class="carousel slide header__carouselExample">
@@ -148,40 +157,66 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </header>
     <!-- header end -->
 
     <!-- main start -->
     <main class="main">
         <div class="wrapper">
-            <div class="main__content">
-                <p>main</p>
-                <p>
-
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Кнопка с data-target
-                    </button>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но
-                        открывается, когда пользователь активирует соответствующий триггер.
+            <div class="main-restaurant section">
+                <div class="inner">
+                    <div class="section__header">
+                        <h2 class="section__title">
+                            some top restaurant for dining in or Take away!
+                        </h2>
+                        <div class="section__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.
+                        </div>
                     </div>
                 </div>
-
-                <!-- gpt -->
-                <button id="toggleButton">Показать/скрыть элементы</button>
-                <div class="items-container">
-                    <div class="item">Элемент 1</div>
-                    <div class="item">Элемент 2</div>
-                    <div class="item">Элемент 3</div>
-                    <div class="item">Элемент 4</div>
-                    <div class="item">Элемент 5</div>
-                    <!-- Добавьте нужное количество элементов -->
+                <div class="main-restaurant__body">
+                    <div class="main-restaurant__content">
+                        <img class="main-restaurant__list-bg" src="img/header-dots.png" alt="">
+                        <img class="main-restaurant__list-bg" src="img/header-dots.png" alt="">
+                        <div class="main-restaurant__list">
+                            <div class="main-restaurant__item">
+                                <div class="main-restaurant__item-bg">
+                                    <img src="img/fire-water.jpg" alt="fire-watter">
+                                </div>
+                            </div>
+                            <div class="main-restaurant__item">
+                                <div class="main-restaurant__item-bg">
+                                    <img src="img/wonton.jpg" alt="fire-watter">
+                                </div>
+                            </div>
+                            <div class="main-restaurant__item">
+                                <div class="main-restaurant__item-bg">
+                                    <img src="img/wonton.jpg" alt="fire-watter">
+                                </div>
+                            </div>
+                            <div class="main-restaurant__item">
+                                <div class="main-restaurant__item-bg">
+                                    <img src="img/wonton.jpg" alt="fire-watter">
+                                </div>
+                            </div>
+                            <div class="main-restaurant__item">
+                                <div class="main-restaurant__item-bg">
+                                    <img src="img/wonton.jpg" alt="fire-watter">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="main-restaurant__more">
+                            <div class="main-restaurant__more-icon">
+                                <img src="img/arow.png" alt="">
+                            </div>
+                            See More 
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </main>
