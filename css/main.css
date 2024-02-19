@@ -567,7 +567,7 @@ position: absolute;
 /* This styles reveal the list of restaurants. */
 .main-restaurant__list--expand {
     overflow-x: auto;
-    max-width: 100%;
+    max-width: calc(100vw - 250px);
 }
 
 
@@ -582,8 +582,8 @@ position: absolute;
     left: -20px;
 }
 .main-restaurant__list-bg:nth-child(2) {
-    right: -25px;
-    bottom: 0;
+    right: 530px;
+    bottom: 220px;
 }
 .main-restaurant__item {
     width: 639px;
@@ -593,14 +593,10 @@ position: absolute;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    
     opacity: 0;
-
     transition: opacity 0.5s ease-in-out;
-}
-.main-restaurant__item--hidden {
     display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 .main-restaurant__item--show {
     display: flex;
@@ -792,7 +788,8 @@ position: absolute;
         left: calc(-15px - 0 * ((100vw - 1195px) / (1920 - 1195)));
     }
     .main-restaurant__list-bg:nth-child(2) {
-        right: calc(-45px + 20 * ((100vw - 1195px) / (1920 - 1195)));
+        right: calc(90px + 420 * ((100vw - 1195px) / (1920 - 1195)));
+        bottom: calc(100px + 120 * ((100vw - 1195px) / (1920 - 1195)));
     }
 
     .main-restaurant__item {
@@ -964,6 +961,7 @@ position: absolute;
     }
     .main-restaurant__list-bg:nth-child(2) {
         right: calc(-25px - 20 * ((100vw - 554px) / (1194 - 554)));
+        bottom: calc(215px + 95 * ((100vw - 554px) / (1194 - 554)));
     }
     .main-restaurant__list {
         padding-top: calc(17px + 53 * ((100vw - 554px) / (1194 - 554)));
@@ -977,12 +975,13 @@ position: absolute;
         height: calc(493px + 146 * ((100vw - 554px) / (1194 - 554)));
         margin-right: 0;
     }
-    .main-restaurant__item:not(:last-child) {
+    .main-restaurant__item {
         margin-bottom: 30px;
     }
     .main-restaurant__more {
         margin-top: 50px;
         margin-left: 0;
+        margin-right: 0;
     }
 
 }
@@ -1155,6 +1154,9 @@ position: absolute;
     }
     .main-restaurant__list-bg:nth-child(1) {
         top: calc(20px + 20 * ((100vw - 320px) / (554 - 320)));
+    }
+    .main-restaurant__list-bg:nth-child(2) {
+        bottom: calc(190px + 25 * ((100vw - 320px) / (554 - 320)));
     }
     .main-restaurant__item {
         width: calc(285px + 210 * ((100vw - 320px) / (554 - 320)));
