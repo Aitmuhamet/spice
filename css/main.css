@@ -12,6 +12,13 @@
     box-sizing: inherit;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -551,7 +558,7 @@ position: absolute;
     display: flex;
     align-items: center;
 
-    padding-bottom: 210px;
+    padding-bottom: 200px;
 }
 .main-restaurant__list {
     display: flex;
@@ -559,15 +566,32 @@ position: absolute;
     position: relative;
     z-index: 10;
     padding-top: 70px;
+    padding-bottom: 10px;
     max-width: 1310px;
 
+    scrollbar-width: thin;
+    scrollbar-color: rgba(var(--main-color), 0.9);
+
     transition: all 0.5s ease-in-out;
+}
+
+.main-restaurant__list::-webkit-scrollbar {
+    /* Стилизуем полосу прокрутки для браузеров на базе WebKit (Chrome, Safari) */
+    width: 3px; /* Толщина полосы прокрутки */
+}
+
+.main-restaurant__list::-webkit-scrollbar-thumb {
+    /* Стилизуем "бегунок" полосы прокрутки */
+    
+    background-color: rgb(var(--main-color)); /* Цвет бегунка */
+    border-radius: 6px; /* Радиус закругления углов бегунка */
+    border: 2px solid transparent;
 }
 
 /* This styles reveal the list of restaurants. */
 .main-restaurant__list--expand {
     overflow-x: auto;
-    max-width: calc(100vw - 250px);
+    max-width: calc(100vw - 300px);
 }
 
 
@@ -654,6 +678,7 @@ position: absolute;
     margin-bottom: 20px;
 
     position: relative;
+    transition: all 0.2s ease-in-out;
 }
 .main-restaurant__more-icon::before {
     content: '';
@@ -663,6 +688,9 @@ position: absolute;
     position: absolute;
     right: 23px;
     z-index: -1;
+}
+.main-restaurant__more-icon--pressed {
+    transform: rotate(180deg);
 }
 
 /* footer */
@@ -717,7 +745,7 @@ position: absolute;
     }
 
     .header__overlay {
-        right: -1px;
+        right: 0px;
     }
 
     .header__logo {
@@ -960,7 +988,7 @@ position: absolute;
         left: calc(-15px + 0 * ((100vw - 554px) / (1194 - 554)));
     }
     .main-restaurant__list-bg:nth-child(2) {
-        right: calc(-25px - 20 * ((100vw - 554px) / (1194 - 554)));
+        right: calc(-25px - 0 * ((100vw - 554px) / (1194 - 554)));
         bottom: calc(215px + 95 * ((100vw - 554px) / (1194 - 554)));
     }
     .main-restaurant__list {
@@ -969,6 +997,7 @@ position: absolute;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        max-width: 100%;
     }
     .main-restaurant__item {
         width: calc(495px + 144 * ((100vw - 554px) / (1194 - 554)));
@@ -1156,6 +1185,7 @@ position: absolute;
         top: calc(20px + 20 * ((100vw - 320px) / (554 - 320)));
     }
     .main-restaurant__list-bg:nth-child(2) {
+        right: calc(-15px - 10 * ((100vw - 320px) / (554 - 320)));
         bottom: calc(190px + 25 * ((100vw - 320px) / (554 - 320)));
     }
     .main-restaurant__item {

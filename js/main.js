@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let toggleButton = document.querySelector('.main-restaurant__more');
+    let toggleButtonIcon = document.querySelector('.main-restaurant__more-icon');
+    let toggleButtonTxt = document.querySelector('.main-restaurant__more-txt');
     let itemsList = document.querySelector('.main-restaurant__list');
     let restaurants = itemsList.querySelectorAll('.main-restaurant__item')
     
@@ -12,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     
     toggleButton.addEventListener('click', function () {
+      toggleButtonIcon.classList.toggle('main-restaurant__more-icon--pressed');  
+      toggleButtonTxt.textContent = toggleButtonIcon.classList.contains('main-restaurant__more-icon--pressed') ?
+        'See Less' :
+        'See More';
+      
       itemsList.classList.toggle('main-restaurant__list--expand');
       restaurants.forEach(function(elem, key){
         if (key > 1) {
