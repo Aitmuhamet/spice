@@ -3,7 +3,7 @@
 :root {
     --bg: #FFF5EC;
     --main-color: 254, 6, 60;
-    --main-col-green: rgb(55, 205, 140)
+    --main-col-green: rgb(55, 205, 140);
 }
 
 *,
@@ -558,7 +558,7 @@ position: absolute;
     display: flex;
     align-items: center;
 
-    padding-bottom: 180px;
+    padding-bottom: 160px;
 }
 .main-restaurant__list {
     display: flex;
@@ -566,7 +566,7 @@ position: absolute;
     position: relative;
     z-index: 20;
     padding-top: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     max-width: 1320px;
     
     overflow-x: scroll;
